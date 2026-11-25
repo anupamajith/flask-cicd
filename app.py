@@ -6,7 +6,7 @@ metrics = PrometheusMetrics(app)   # exposes /metrics
 
 @app.route("/")
 def home():
-    return jsonify(message="Hello from my automated CI/CD pipeline", version="4.0")
+    return jsonify(message="Hello from Flask on Kubernetes", version="3.0")
 
 @app.route("/health")
 def health():
